@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@200&display=swap');
+
+$blue: #0B0342;
+$yellow: #D1AF52;
+$grey: #EAF7F4;
+$black: black;
+$white: white;
+
+
+@mixin form(){
+    width: 320px;
+    margin: 30px auto;
+    height: auto;
+    padding-top: 0px;
+    border-radius: 10px;
+    background-color: $yellow;
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+}
+
+@mixin content (){
+    width: 80%;
+    margin: auto;
+}
+
+@mixin title{
+    font-size: 2em;
+    margin: auto;
+    color: $blue;
+}
+
+@mixin label{
+    color: $white;
+    text-align: left;
+    font-size: bold;
+    margin: 10px auto 20px auto;
+    font-size: 1.2em;
+}
+
+@mixin flex(){
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+}
+
+@mixin button(){
+    width: auto;
+    border-radius: 15px;
+    height: 40px;
+    background-color: $blue;
+    color: white;
+    font-weight: bold;
+    border-color: $blue;
+    padding: 5px;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+@mixin content (){
+    width: 80%;
+    margin: auto;
+}
+
+@mixin label(){
+    color: $white;
+    text-align: left;
+    font-size: bold;
+    margin: 10px auto 20px auto;
+    font-size: 1.2em;
+}
+
+@mixin input(){
+width: auto;
+border-radius: 5px;
+font-size: 1.5em;
+    height: 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+color: $blue;
+background-color: $blue;
+border-color: $blue;
+}
+
+
+@mixin button(){
+    width: auto;
+    border-radius: 5px;
+    font-size: 1.5em;
+    height: 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: $white;
+    padding: 5px;
+    background-color: $blue;
+}
+
+select{
+    color: black;
+}
+
+html, body{
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    color: black;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Pacifico', 'sans-serif';
+}
+
+
+.grey{
+    background-color: $grey;
+}
+
+
+button{
+    @include button();
+}
+
+button:hover{
+    transform: scale(1.1) ;
+}
+
+.title{
+    color: $blue;
+    font-size: 1.5em;
+    font-weight: 900;
+ font-family: 'Pacifico', 'sans-serif';
+
+}
+
+.subtitle{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: grey;
+}
+
+
+.text{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+}
+
+
+.heading{
+    width: 100%;
+    height: 120vh;
+    padding-top: 150px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    background-image: 
+    linear-gradient(rgba(43, 49, 139, 0.548),
+    rgba(15, 35, 153, 0.589)),
+    url("https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXN0YXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  
+
+    &__title{
+        margin: 80px auto;
+        color: white;
+        font-size: 3.5em;
+        font-weight: 800;
+    }
+
+    &__subtitle{
+        color: white;
+        margin:  20px auto;
+        font-size: 2.5em;
+        font-weight: 500;
+    }
+
+    
+    &__search{
+        width: 80%;
+        margin: 60px auto 50px auto;
+        text-align: center;
+        
+        ul{
+            @include flex();
+            margin: auto;
+            width: 80%;
+            
+            li{
+                display: inline;
+                color: white;
+                font-weight: bold;
+
+                .icon{
+                    color: $blue;
+                    margin: auto 20px auto auto;
+                    background-color: $blue;
+                    border-radius: 30px;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+
+                    i{
+                        color: white
+                    }
+                }
+
+            }
+        }
+        
+        
+        &__bar{
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+
+            form{
+                display: flex;
+                flex-direction: row;
+                margin: 10px auto;
+                width: 80%;
+                height: 50px;
+
+                input{
+                    margin-right: 0;
+                    height: 100%;
+                }
+
+                .input{
+                    width: 150px;
+                    display: inline;
+                    margin-left: 0;
+                    input{
+                       
+                        border-radius: 5px;
+                        height: 100%;
+                        margin-right: 0;
+                        font-weight: bold;
+                    }
+
+                    i{
+                        color: white;
+                    }
+                }
+
+                select{
+                    margin-left: 0;
+                    height: 100%;
+                    width: 200px;
+                }
+
+            }
+        }
+    }
+}
+
+
+.partners{
+    margin: 20px auto;
+    padding-top: 50px;
+
+    &__text{
+        padding-top: 50px;
+    }
+
+    &__images{
+        img{
+            height: 150px;
+            width: 180px;
+            margin: 10px;
+        }
+    }
+}
+
+.properties-section{
+    text-align: center;
+    background-color: $grey;
+
+    &__title{
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    &__subtitle{
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    &__buttons{
+        margin: 20px auto;
+        text-align: center;
+        
+        &__btn{
+            
+            margin: 5px auto;
+            width: 120px;
+        }
+    }
+
+    &__items{
+        @include flex();
+        margin: auto;
+        padding-bottom: 10px;
+        text-align: center;
+
+        .item{
+            flex: 1;
+            margin: auto;
+            position: relative;
+            text-align: left;
+            cursor: pointer;
+            transition: 500ms ease-in-out;
+            
+            img{
+                width: 300px;
+                height: 250px;
+               
+            }
+
+            &__title{
+                font-size: 1.5em;
+                color: $blue;
+                font-weight: bold;;
+            }
+
+            &__location{
+                i{
+                    color: $blue;
+                    font-size: 1.1em;
+                }
+            }
+
+            &__status{
+                position: absolute;
+                top: 20px;
+                left: 40px;
+                color: $blue;
+                font-weight: bold;
+                font-size: 1em;
+                font-family: 'Pacifico', 'sans-serif';
+
+            }
+
+            &__price{
+                color: $blue;
+                font-weight: bold;
+                font-size: 1em;
+                font-family: 'Pacifico',
+
+            }
+
+            &__elmts{
+                @include flex;
+                margin: auto 0;
+                width: 85%;
+
+                &__elmt{
+                    i{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .item:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.about-section{
+    &__text{
+        ul{
+            li{
+
+            }
+        }
+    }
+
+}
+
+
+.agents{
+    text-align: center;
+    &__title{
+        margin: auto;
+    }
+
+    &__items{
+        width: 80%;
+        @include flex();
+
+        .agent{
+            display: block;
+        }
+    }
+}
+
+.dashboard{
+    width:  95%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+  
+    &__menu{
+      width:25%;
+      height: auto;
+      display: block;
+  
+      &__list{
+        height: 176px;
+        width: 250px;
+        margin: auto;
+        border: 2px $blue solid;
+        border-radius: 10px;
+        overflow: hidden;
+  
+        .menu-link{
+          height: 35px;
+          width: 100%;
+          display: table;
+          cursor: pointer;
+          text-align: left;
+          border-bottom: 1px $blue solid;
+          @include flex;
+          padding-top: 5px;
+          padding-left: 5px;
+  
+          a{
+            color: $black;
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 1.1em;
+
+            i{
+            color: $black;
+            margin-right: 20px;
+            }
+
+            p{
+                color:$black;
+                margin: 8px auto auto 25px;
+                
+            }
+          }
+        }
+  
+        .menu-link:hover{
+          background-color: $blue;
+          a{
+            color: $white;
+
+            i{
+                color: $white;
+            }
+
+            p{
+                color: $white;
+            }
+          }
+        }
+  
+        .active{
+          background-color: $blue;
+          a{
+            color: $white;
+
+            i{
+                color: $white;
+            }
+
+            p{
+                color: white;
+            }
+          }
+        }
+      }
+    }
+  
+    
+    &__main{
+      display: block;
+      width: 90%;
+      border-radius: 20px;
+      text-align: center;
+      margin: auto;
+  
+      &__heading{
+        background-color: $black;
+        height: 250px;
+        width: 100%;
+        @include flex;
+        padding-top: 50px;
+        padding-left: 40px;
+        border-radius: 15px;
+  
+        .dashboard-title{
+          h1{
+            @include title();
+            color: $yellow
+          }
+  
+          p{
+            color: $white;
+            font-size: 1.1em;
+          }
+        }
+      }
+  
+      &__background{
+        background-color: $white;
+        height: 300px;
+        width: 100%;
+        position: relative;
+  
+        .boxes{
+          @include content;
+          @include flex;
+          margin: -70px auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+  
+          &__item{
+            height: 200px;
+            width: 200px;
+            border: 1px $white solid;
+            box-shadow: 0px 10px 12px #00000029;
+            border-radius: 10px;
+            margin: auto;
+            background-color: $white;
+            padding-top: 50px;
+  
+            span{
+              color: $blue;
+              font-size: 1.5em;
+              font-family: 'roboto', 'sans-serif';
+              
+            }
+  
+            p{
+              margin: 20px auto;
+              font-size: 1.2em;
+              color: $black;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      }
+      
+}

@@ -8,25 +8,17 @@
         <meta name="viewport" content="width=device-width, height=device-height, 
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="icon" href="public/images/tfbk.ico" type="image/x-icon">
-       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="public/css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        <link rel="stylesheet" href="build/css/intlTelInput.css">
-        <meta name="generator" content="pdf2htmlEX"/>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3G0WDZEG0"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-            gtag('config', 'G-N3G0WDZEG0');
             </script>
         <link href="public/css/style.css" rel="stylesheet" /> 
     </head>
         
     <body>
-       <!--header -start-->
+
+       <!-- header start -->
+            <?php include 'headerView.php'; ?>
        
 
         <?= $content ?>
