@@ -1,2 +1,2 @@
-# real-estate-template
+# real-estate-template-theme
 real estate website template 
