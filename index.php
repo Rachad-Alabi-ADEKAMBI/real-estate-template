@@ -1,15 +1,23 @@
 <?php
 require('controller/frontend.php');
-//require('controller/backend.php');
+require('controller/backend.php');
 
 try{
     if (isset($_GET['action'])) {
-        if ($_GET['action'] == 'manuscrit') {
+        if ($_GET['action'] == 'manuscritPage') {
             manuscritPage();
         }
    
-        else if ($_GET['action'] == 'dashboard') {
+        else if ($_GET['action'] == 'dashboardPage') {
             dashboardPage();
+        }
+
+        else if ($_GET['action'] == 'loginPage') {
+            loginPage();
+        }
+
+        else if ($_GET['action'] == 'logout') {
+            logoutPage();
         }
 
         else if ($_GET['action'] == 'homePage') {

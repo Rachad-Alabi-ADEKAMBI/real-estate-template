@@ -14,10 +14,11 @@ $white: white;
     height: auto;
     padding-top: 0px;
     border-radius: 10px;
-    background-color: $yellow;
     display: block;
     padding-top: 30px;
-    text-align: center;
+    text-align: center;  
+    box-shadow: 0px 10px 12px #00000029;
+    border-radius: 10px;
 }
 
 @mixin content (){
@@ -108,6 +109,155 @@ html, body{
     color: black;
     font-size: 1em;
 }
+
+.full{
+    width: 100%;
+}
+/** header css**/
+        nav{
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            background-color: white;
+            z-index: 99999;
+        }
+        
+        label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 50px;
+            font-weight: bold;
+        }
+        
+        label.logo img{
+            margin: 10px auto;
+            height: 50px;
+            width: 170px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            
+        }
+        nav ul li a{
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 3px;
+            margin: auto 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $blue;
+            
+        }
+
+        nav ul li a:hover{
+            text-decoration: none;
+            transform: scale(1.1);
+            transition: 500ms ease-in-out ;
+        }
+        
+        
+        
+        .login-link{
+            border-radius: 3px;
+            border: 1px #222563;
+            width: 100%;
+            background-color: #222563;
+            color: white;
+            padding: 3px;
+        }
+        
+        .login-link:hover{
+            color: #D1AF52;
+            background-color: #222563;  
+        }
+        a.active,a:hover{
+            color:  #D1AF52;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+            }
+            nav ul li a{
+            font-size: 16px;
+            }
+        }
+        @media (max-width: 1279px){
+            .checkbtn{
+            display: block;
+            }
+        
+            .checkbtn i{
+            color: white;
+            }
+        
+            nav{
+                position: fixed;
+                z-index: 9999;
+                background-color:  #222563; 
+            }
+            
+            nav label img{
+            top: 5px;
+            left: 5px;
+            position: absolute;
+            }
+        
+            ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            top: 80px;
+            padding-top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            }
+            nav ul li{
+            display: block;
+            margin: 10px 0;
+            line-height: 30px;
+            }
+            nav ul li a{
+            font-size: 20px;
+            }
+            a:hover,a.active{
+            background: none;
+            color:  #D1AF52;
+            }
+            #check:checked ~ ul{
+            left: 0;
+            }
+        }
+        section{
+            background-size: cover;
+            z-index: 1;
+            opacity: 1;
+        }
+
+  /** end header css**/
 
 h1{
     font-size: 2em;
@@ -392,7 +542,7 @@ button:hover{
     }
 
     &__items{
-        width: 80%;
+        width: 100%;
         @include flex();
 
         .agent{
@@ -455,6 +605,7 @@ button:hover{
           background-color: $blue;
           a{
             color: $white;
+            text-decoration: none;
 
             i{
                 color: $white;
@@ -555,4 +706,117 @@ button:hover{
       }
       }
       
+}
+
+.manuscrit{
+    padding-top: 120px;
+
+    &__text{
+        h1{
+            text-align: center;
+        }
+
+        p{
+            i{
+                color: $yellow;
+            }
+        }
+    }
+
+    &__form{
+        margin-top: 80px;
+
+        .form{
+            h2{
+                text-align: center;
+            }
+
+            .group{
+                margin: 10px auto 0 auto;
+
+                input{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.login{
+    width: 100%;
+    background-color: $blue;
+    padding-top: 120px;
+
+    .form{
+        @include form();
+        background-color:  white;
+        height: 400px;
+
+        &__close{
+            color: $blue;
+        }
+
+        &__logo{
+            margin: 30px auto;
+            text-align: center;
+
+            img{
+                width: 140px;
+                height: 40px;
+                margin: auto;
+            }
+        }
+
+
+
+
+    }
+}
+
+.footer{
+    padding-top: 20px;
+    background-image: 
+    linear-gradient(rgba(43, 49, 139, 0.548),
+    rgba(15, 35, 153, 0.589)),
+    url("https://images.unsplash.com/photo-1560185127-bdf08e449371?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0px auto;
+    color: white;
+    &__item{
+        margin: 10px auto;
+        padding-left: 50px ;
+            &__pic{
+                img{
+                    width: 120px;
+                    height: 40px;
+                }
+
+                h4{
+                    font-weight: bold;
+                    
+                }
+            }
+
+            &__title{
+                color: white;
+                font-size: 1.7em;
+            }
+
+            &__text{
+                color: white;
+            }
+
+            ul{
+                li{
+                    color: white;
+
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
 }
