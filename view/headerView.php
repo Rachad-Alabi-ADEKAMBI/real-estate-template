@@ -21,7 +21,6 @@
       </label>
       <ul>
         <li><a class="<?php echo $current_page == 'index.php' ? 'active':NULL ?>" href="index.php"> Accueil</a></li>
-        <li><a class="<?php echo $current_page == 'partenaires.php' ? 'active':NULL ?>" href="partenaires.php"> A propos </a></li>
         <li><a class="<?php echo $current_page == 'partenaires.php' ? 'active':NULL ?>" href="partenaires.php"> Dépôt de Manuscrit </a></li>
        
    
@@ -29,7 +28,7 @@
         <li><a class="<?php echo $current_page == 'partenaires.php' ? 'active':NULL ?>" href="partenaires.php"></i> Location </a></li>
         <?php
         if(!isset($_SESSION["user"])): ?>
-          <li><a class="login-link <?php echo $current_page == 'connexion.php' ? 'active':NULL ?>" href="connexion.php"></i> Connexion</a></li>
+          <li><a class="login-link <?php echo $current_page == 'connexion.php' ? 'active':NULL ?>" href="index.php?action=login"></i> Connexion</a></li>
 
         <?php else: ?>
 

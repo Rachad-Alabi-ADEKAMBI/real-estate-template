@@ -26,8 +26,21 @@ function loginPage()
     require "view/frontend/loginPageView.php";
 }
 
-function preHome()
+function registerPage()
+{
+   
+
+    require "view/frontend/registerPageView.php";
+}
+
+function forgotPasswordPage()
 {
 
-    require "view/frontend/preHomePageView.php";
+    require "view/frontend/forgotPasswordPageView.php";
+}
+
+function home()
+{
+
+    require "view/frontend/homePageView.php";
 }
