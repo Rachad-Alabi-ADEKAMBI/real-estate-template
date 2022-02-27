@@ -1,6 +1,4 @@
 <?php session_start(); 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +38,7 @@ $compte_Formated=number_format($compte, 0, ',', ' ');
 
 fclose($compteur_f);number_format($compte, 
 0, ',', ' ');
-echo '<strong>'.$compte_Formated.'</strong> visites depuis le 03/11/21';
+echo '<strong>'.$compte_Formated.'</strong> visites';
 ?>
         </div>
 
@@ -341,9 +339,6 @@ echo '<strong>'.$compte_Formated.'</strong> visites depuis le 03/11/21';
 		<div class="container">
 			<div class="row about-section">
 				<div class="col-lg-6 col-md-12 about-section__video">
-                <h2 class="about-section__title title pt-1">
-                    Présentation vidéo
-                </h2>
                 <iframe width="350" height="220" src="https://www.youtube.com/embed/oYSt_ETGvlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               
                 </div>
@@ -384,8 +379,8 @@ echo '<strong>'.$compte_Formated.'</strong> visites depuis le 03/11/21';
     </section>
     <!--    -->
 
-        <!--properties start-->
-        <section id="" class="grey" >
+           <!--properties start-->
+           <section id="" class="grey" >
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-12 col-md-12 properties-section">
@@ -552,6 +547,74 @@ echo '<strong>'.$compte_Formated.'</strong> visites depuis le 03/11/21';
         </section>
     <!-- properties end-->
 
+
+      <!--  -->
+      <section id="" class="book" >
+		<div class="container">
+			<div class="row book-section">
+			
+                <div class="col-lg-6 col-md-12 book-section__text">
+                    <h2 class="book-section__title title mt-1"> 
+                       Nouveau livre
+                    </h2>
+
+                    <p class="book-section__subtitle subtitle">
+                    L'essentiel de l'investissement immobilier : Volez vers votre liberté financière !
+                    </p>
+
+                    <p class="book-section__text1">
+                                                Cet ouvrage publié dans la collection “les pros de l’Éco” s’adresse à la fois aux primo-accédant, comme aux investisseurs qui visent le locatif, la rentabilité et bien sûr la défiscalisation. <br>
+
+                            Résidence principale, investissement locatif et défiscalisation sont les maîtres mots de ce livre. 
+
+                            Il est une compilation de tout ce qu’il faut savoir sur l’accession au logement, mais aussi sur la location, ses modalités, ses astuces.  <br>
+
+                            « L’essentiel de l’investissement immobilier » est un guide 2.0 rassemblant le savoir et les explorations d’un jeune professionnel diplômé en immobilier, et acteur du terrain, qui a réussi de véritables “coups”. <br>
+
+                            Zlitni Fares, professionnel de l’immobilier, gère ses propres investissements, passionné par ce monde-là, il rédige des articles immobiliers chaque semaine, pour différents supports, 
+                            afin d’être toujours à l’affût d’informations propres à cet univers. <br>
+                    </p>
+
+                 
+                    <button class="book-section__btn button">
+                        <a href="https://www.amazon.fr/Lessentiel-linvestissement-immobilier-libert%C3%A9-financi%C3%A8re/dp/2381271244/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+                            Commander
+                        </a>
+                    </button>
+                </div>                                              
+
+                <div class="col-lg-6 col-md-12 book-section__video">
+                   
+                   <div class="livre">
+                       <img src="public/images/livre.png" alt="">
+                   </div>
+                </div>
+
+            </div> 
+        </div> 
+    </section>
+    <!--    -->
+
+
+         <!-- testimony start  
+     <section id="" class="mt-5">
+		<div class="">
+			<div class="row books">
+				<div class="col-lg-6 col-md-12 books__image ">
+                       
+                </div>
+
+                <div class="col-lg-6 col-md-12 books_text ">
+                       
+                </div>
+            </div> 
+        </div> 
+    </section>  -->
+    
+
+
+ 
+
     <!-- agents start  -->
     <section id="" class=" mt-5">
 		<div class="container">
@@ -635,31 +698,82 @@ echo '<strong>'.$compte_Formated.'</strong> visites depuis le 03/11/21';
     <!--    -->
 
 
-     <!-- testimony start  
-     <section id="" class="mt-5">
-		<div class="">
+   
+    <!-- agents start  -->
+    <section id="" class=" mt-5">
+		<div class="container">
 			<div class="row about-section">
-				<div class="col-lg-12 col-md-12 testimony ">
-                        <h2 class="testimony__title">
+				<div class="col-lg-12 col-md-12 agents  ">
+                        <h2 class="agents__title title mx-auto">
                             Clients satisfaits
                         </h2>
 
-                        <p class="testimony__subtitle">
-                            Qu'en disent nos clients ?
+                        <p class="agents__subtitle subtitle">
+                           Que disent nos clients
                         </p>
 
-                        <div class="testimony__boxes">
-                                <div class="testimony___boxes__item">
+                        <div class="agents__items">
+                            <div class="agent">
+                                <img src="https://www.radiustheme.com/demo/wordpress/themes/homlisti/wp-content/uploads/2021/09/agent-2.png" alt="" class="agent__picture">
+                                <h4 class="agent__title">
+                                   Jane Doe
+                                </h4>
 
-                                </div>
-                        </div>
+                                <p class="">
+                                    Je suis très satisfait de la prestation, j'ai réussi à vender mon bien en seulement quelques jours, je recommande vivement
+                                </p>
+
+
+                            </div>
+
+                            <div class="agent">
+                                <img src="https://www.radiustheme.com/demo/wordpress/themes/homlisti/wp-content/uploads/2021/09/agent-2.png" alt="" class="agent__picture">
+                                <h4 class="agent__title">
+                                   Jane Doe
+                                </h4>
+
+                                <p class="">
+                                    Je suis très satisfait de la prestation, j'ai réussi à vender mon bien en seulement quelques jours, je recommande vivement
+                                </p>
+
+
+                            </div>
+
+                            <div class="agent">
+                                <img src="https://www.radiustheme.com/demo/wordpress/themes/homlisti/wp-content/uploads/2021/09/agent-2.png" alt="" class="agent__picture">
+                                <h4 class="agent__title">
+                                   Jane Doe
+                                </h4>
+
+                                <p class="">
+                                    Je suis très satisfait de la prestation, j'ai réussi à vender mon bien en seulement quelques jours, je recommande vivement
+                                </p>
+
+
+                            </div>
+
+                            <div class="agent">
+                                <img src="https://www.radiustheme.com/demo/wordpress/themes/homlisti/wp-content/uploads/2021/09/agent-2.png" alt="" class="agent__picture">
+                                <h4 class="agent__title">
+                                   Jane Doe
+                                </h4>
+
+                                <p class="">
+                                    Je suis très satisfait de la prestation, j'ai réussi à vender mon bien en seulement quelques jours, je recommande vivement
+                                </p>
+
+
+                            </div>
+
+                            
+                        </div> <br>
 
                        
                 </div>
             </div> 
         </div> 
     </section>
-        -->
+    <!--    -->
     
         <?php include 'footer.php'; ?>
     <script src="public/js/script.js" ></script>

@@ -24,6 +24,18 @@
 
                 <div class="footer__bottom">
                     <div class="footer__bottom__menu">
+
+
+                    <div class="footer-link">
+                            <a href="depot-de-manuscrit.php">Dépôt de Manuscrit </a>
+                        </div>
+
+                        <div class="footer-link">
+                            <a href="">Locations</a>
+                        </div>
+
+
+
                         <div class="footer-link">
                             <a href="contact.php">Contact</a>
                         </div>
