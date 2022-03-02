@@ -1,17 +1,5 @@
 <?php
-//$pdo = new PDO('mysql:dbname=fineblock;host=localhost', 'root', '');
 
-//production
-/*
-try
-{
-	$pdo = new PDO('mysql:host=localhost;dbname=vqwi3868_fineblock;charset=utf8', 'vqwi3868_xavier', 'Rzt6Ys7NEKsj');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-*/
 
 //local
 try
